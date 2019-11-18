@@ -1,10 +1,17 @@
 import React from 'react';
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import Landing from "./components/layout/Landing";
+
 import './App.css';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      Test
+      <Router>
+        <div className="canvas">
+          <Landing />
+        </div>
+      </Router>
     </div>
   );
 }
