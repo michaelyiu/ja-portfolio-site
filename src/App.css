@@ -70,6 +70,8 @@ nav ul{
 	padding:5px 0;
 }
 
+
+
 #desktopNav {
 	display:none;
 	text-align: center;
@@ -84,11 +86,9 @@ nav ul{
 #desktopNav nav ul{
 	display: flex;
 	width: auto;
-}
-
-#desktopNav nav>ul{
 	padding: 0px 30px;
 }
+
 #desktopNav nav ul li{
 	padding: 0 10px;
 	line-height:1.6em;
@@ -124,17 +124,7 @@ ul:after
 }
 
 
-
-
 a{
 	color: rgba(0,0,0,.5);
 	text-decoration: none;
 }
-
-/* .page-divider{
-	line-height: 1.6em;
-	margin-top: -1.6em;
-	margin-bottom: 1.6em;
-	border-bottom-width: 2px;
-	border-bottom:1px solid rgba(0,0,0,.1);
-} */
