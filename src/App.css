@@ -31,6 +31,10 @@ body, html {
 }
 
 .canvas{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	min-height: 100vh;
 	margin: 0 auto;
 	padding: 0 17px;
 }
@@ -56,6 +60,9 @@ nav ul{
 	overflow: visible;
 	visibility: visible;
 	max-height: 1000px;
+}
+footer{
+	padding: 20px 0;
 }
 
 #mobileMenuLink{
@@ -92,6 +99,13 @@ nav ul{
 #desktopNav nav ul li{
 	padding: 0 10px;
 	line-height:1.6em;
+}
+
+#mobileMenuLink a:hover,
+#mobileNav nav ul li a:hover,
+#desktopNav nav ul li a:hover{
+	transition: 0.3s color ease-in-out;
+	color: green;
 }
 
 @media screen and (min-width: 640px){
@@ -197,6 +211,14 @@ footer{
 	min-width: 300px;
 }
 
+.video-intro .image{
+	width: 100%;
+}
+
+.video-intro .show{
+	display: none;
+}
+
 /* div for image not actual image */
 .image{
 	position:absolute;
@@ -218,7 +240,7 @@ footer{
 }
 
 .image:hover img{
-	transform: scale(1.1);
+	transform: scale(1.05);
 }
 
 
@@ -235,6 +257,7 @@ footer{
 .play-button:hover{
 	background-color: rgba(0, 173, 239, 0.9);
 	cursor:pointer;
+		z-index: 10;
 }
 
 .play-button:after{

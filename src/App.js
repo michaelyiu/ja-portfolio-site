@@ -8,8 +8,9 @@ import About from "./components/pages/About";
 import Contact from "./components/pages/Contact";
 import Landing from "./components/pages/Landing";
 
-import './App.css';
 import { Footer } from './components/layout/Footer';
+import './App.css';
+import './css/Contact.css';
 
 const App = () => {
   return (
