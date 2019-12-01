@@ -20,7 +20,9 @@ const Contact = () => {
 			<h1>Contacts</h1>
 			<div className="contact-container">
 
-				<div className="contact-image"></div>
+				<div className="contact-image">
+					<img src={require("./../../assets/2b.jpg")} alt="" />
+				</div>
 				<form onSubmit={handleSubmit}>
 					<div className="name">
 						<TextFieldGroup

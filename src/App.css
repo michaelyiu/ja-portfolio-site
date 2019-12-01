@@ -257,7 +257,7 @@ footer{
 .play-button:hover{
 	background-color: rgba(0, 173, 239, 0.9);
 	cursor:pointer;
-		z-index: 10;
+	z-index: 10;
 }
 
 .play-button:after{
