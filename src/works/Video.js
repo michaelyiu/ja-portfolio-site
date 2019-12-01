@@ -12,7 +12,7 @@ const Video = (props) => {
 				<a /*href="javascript:"*/ id="btn_play" className="btn"><img src={video.snippet.thumbnails.high.url} alt="play video" /></a>
 			</div>
 
-			<iframe src={`https://www.youtube.com/embed/${video.id.videoId}?rel=0&autoplay=${videoClicked ? 1 : 0}`} frameBorder="0" allow="autoplay; encrypted-media" allowfullscreen="true"></iframe>
+			<iframe src={`https://www.youtube.com/embed/${video.id.videoId}?rel=0&autoplay=${videoClicked ? 1 : 0}`} frameBorder="0" allow="autoplay; encrypted-media" allowFullScreen="true"></iframe>
 		</div>
 	)
 }

@@ -7,7 +7,7 @@ const Work = () => {
 	useEffect(() => {
 
 		const fetchVideos = async () => {
-			const response = await fetch(`https://www.googleapis.com/youtube/v3/search?key=${process.env.YOUTUBE_KEY}&channelId=${process.env.YOUTUBE_CHANNEL}&part=snippet,id&order=date&maxResults=20`);
+			const response = await fetch(`https://www.googleapis.com/youtube/v3/search?key=${process.env.REACT_APP_YOUTUBE_KEY}&channelId=${process.env.REACT_APP_YOUTUBE_CHANNEL}&part=snippet,id&order=date&maxResults=20`);
 			const json = await response.json();
 			setVideos(json.items);
 		}
